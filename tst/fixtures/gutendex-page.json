@@ -1,0 +1,107 @@
+{
+  "count": 129,
+  "next": null,
+  "previous": "https://gutendex.com/books/?copyright=false&languages=en&page=4&search=dickens&sort=popular",
+  "results": [
+    {
+      "id": 1023,
+      "title": "Bleak House",
+      "authors": [
+        {
+          "name": "Charles Dickens",
+          "birth_year": 1812,
+          "death_year": 1870
+        }
+      ],
+      "translators": [],
+      "subjects": [
+        "Taverns (Inns) -- England"
+      ],
+      "bookshelves": [],
+      "languages": [
+        "en"
+      ],
+      "copyright": false,
+      "media_type": "Text",
+      "formats": {
+        "text/html": "https://www.gutenberg.org/ebooks/42908.html.images",
+        "application/epub+zip": "https://www.gutenberg.org/ebooks/42908.epub3.images",
+        "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/42908.kf8.images",
+        "text/plain; charset=iso-8859-1": "https://www.gutenberg.org/files/42908/42908-8.txt",
+        "application/rdf+xml": "https://www.gutenberg.org/ebooks/42908.rdf",
+        "image/jpeg": "https://www.gutenberg.org/cache/epub/42908/pg42908.cover.medium.jpg",
+        "text/plain; charset=us-ascii": "https://www.gutenberg.org/ebooks/42908.txt.utf-8",
+        "application/octet-stream": "https://www.gutenberg.org/cache/epub/42908/pg42908-h.zip"
+      },
+      "download_count": 25
+    },
+    {
+      "id": 37284,
+      "title": "Dickens As an Educator",
+      "authors": [
+        {
+          "name": "Hughes, James L. (James Laughlin)",
+          "birth_year": 1846,
+          "death_year": 1935
+        }
+      ],
+      "translators": [],
+      "subjects": [
+        "Dickens, Charles, 1812-1870 -- Knowledge -- Education",
+        "Didactic fiction, English -- History and criticism",
+        "Education -- Great Britain -- History -- 19th century",
+        "Education in literature"
+      ],
+      "bookshelves": [],
+      "languages": [
+        "en"
+      ],
+      "copyright": false,
+      "media_type": "Text",
+      "formats": {
+        "text/html": "https://www.gutenberg.org/ebooks/37284.html.images",
+        "text/html; charset=iso-8859-1": "https://www.gutenberg.org/files/37284/37284-h/37284-h.htm",
+        "application/epub+zip": "https://www.gutenberg.org/ebooks/37284.epub3.images",
+        "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/37284.kf8.images",
+        "text/plain; charset=iso-8859-1": "https://www.gutenberg.org/files/37284/37284-8.txt",
+        "application/rdf+xml": "https://www.gutenberg.org/ebooks/37284.rdf",
+        "image/jpeg": "https://www.gutenberg.org/cache/epub/37284/pg37284.cover.medium.jpg",
+        "text/plain; charset=us-ascii": "https://www.gutenberg.org/ebooks/37284.txt.utf-8",
+        "application/octet-stream": "https://www.gutenberg.org/cache/epub/37284/pg37284-h.zip"
+      },
+      "download_count": 24
+    },
+    {
+      "id": 15822,
+      "title": "The Faithful Steward: Or, Systematic Beneficence an Essential of Christian Character",
+      "authors": [
+        {
+          "name": "Clark, Sereno D. (Sereno Dickenson)",
+          "birth_year": null,
+          "death_year": null
+        }
+      ],
+      "translators": [],
+      "subjects": [
+        "Christian stewardship",
+        "Finance, Personal -- Religious aspects -- Christianity"
+      ],
+      "bookshelves": [],
+      "languages": [
+        "en"
+      ],
+      "copyright": false,
+      "media_type": "Text",
+      "formats": {
+        "text/html": "https://www.gutenberg.org/ebooks/15822.html.images",
+        "application/epub+zip": "https://www.gutenberg.org/ebooks/15822.epub3.images",
+        "application/x-mobipocket-ebook": "https://www.gutenberg.org/ebooks/15822.kf8.images",
+        "text/plain; charset=us-ascii": "https://www.gutenberg.org/ebooks/15822.txt.utf-8",
+        "application/rdf+xml": "https://www.gutenberg.org/ebooks/15822.rdf",
+        "image/jpeg": "https://www.gutenberg.org/cache/epub/15822/pg15822.cover.medium.jpg",
+        "application/octet-stream": "https://www.gutenberg.org/cache/epub/15822/pg15822-h.zip"
+      },
+      "download_count": 20
+    }
+  ]
+}

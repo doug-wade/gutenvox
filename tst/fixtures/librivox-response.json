@@ -1,0 +1,29 @@
+{
+  "books": [
+    {
+      "id": "53",
+      "title": "Bleak House",
+      "description": "Bleak House is the ninth novel by Charles Dickens, published in 20 monthly parts between March 1852 and September 1853. It is widely held to be one of Dickens' finest and most complete novels, containing one of the most vast, complex and engaging arrays of minor characters and sub-plots in his entire canon. Dickens tells all of these both through the narrative of the novel's heroine, Esther Summerson, and as an omniscient narrator. Memorable characters include the menacing lawyer Tulkinghorn, the friendly but depressive John Jarndyce and the childish Harold Skimpole. The plot concerns a long-running legal dispute (Jarndyce and Jarndyce) which has far-reaching consequences for all involved. (Summary from Wikipedia)",
+      "url_text_source": "https://www.gutenberg.org/etext/1023",
+      "language": "English",
+      "copyright_year": "1853",
+      "num_sections": "67",
+      "url_rss": "https://librivox.org/rss/53",
+      "url_zip_file": "https://www.archive.org/download/bleak_house_cl_librivox/bleak_house_cl_librivox_64kb_mp3.zip",
+      "url_project": "https://en.wikipedia.org/wiki/Bleak_House",
+      "url_librivox": "https://librivox.org/bleak-house-by-charles-dickens/",
+      "url_other": "",
+      "totaltime": "43:30:19",
+      "totaltimesecs": 156619,
+      "authors": [
+        {
+          "id": "91",
+          "first_name": "Charles",
+          "last_name": "Dickens",
+          "dob": "1812",
+          "dod": "1870"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "gutenvox",
+  "description": "find the top project gutenberg books that have no librivox recording",
+  "version": "0.0.1",
+  "bin": "dist/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "coverage": "node --experimental-modules=true --experimental-test-coverage=true --test-reporter=lcov --test-reporter-destination=lcov.info --loader=tsm --test tst/*.test.ts",
+    "test": "node --experimental-modules=true --loader=tsm --test tst/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.22",
+    "@types/node-fetch-cache": "^3.0.5",
+    "esmock": "^2.6.4",
+    "tsm": "^2.3.0"
+  },
+  "dependencies": {
+    "node-fetch-cache": "^4.1.0",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@4.1.0"
+}
