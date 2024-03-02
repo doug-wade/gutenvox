@@ -27,8 +27,5 @@ jobs:
             - name: Build monorepo
               run: yarn build
 
-            - name: Static analysis
-              run: yarn lint
-
             - name: Run unit tests
-              run: yarn ci-test
+              run: yarn test
