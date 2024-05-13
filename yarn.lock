@@ -58,7 +58,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:*, @types/node-fetch@npm:^2.6.9":
+"@types/node-fetch@npm:*, @types/node-fetch@npm:2.6.11":
   version: 2.6.11
   resolution: "@types/node-fetch@npm:2.6.11"
   dependencies:
@@ -690,15 +690,15 @@ __metadata:
   linkType: hard
 
 "node-fetch-cache@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "node-fetch-cache@npm:4.1.0"
+  version: 4.1.1
+  resolution: "node-fetch-cache@npm:4.1.1"
   dependencies:
-    "@types/node-fetch": "npm:^2.6.9"
+    "@types/node-fetch": "npm:2.6.11"
     cacache: "npm:^18.0.1"
     form-data: "npm:^4.0.0"
     locko: "npm:^1.1.0"
     node-fetch: "npm:2.7.0"
-  checksum: 10c0/66960120cb0e53ff68c69a38c485b4b9ce8acc42968b473c59ea282c1660844626f37719d66de01dea358ee4297c7da4534680890e73e75a03f88ad4ae441b72
+  checksum: 10c0/e1253c4cf4577a0965d6b685be7deb8ebbd3d5bc339ca55900ff306462cfd4141726d083f7bd4cebe5f9b8c4e933b29291dc14ea566c45b40dd32e754e2e6f81
   languageName: node
   linkType: hard
 
