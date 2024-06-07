@@ -456,9 +456,9 @@ __metadata:
   linkType: hard
 
 "esmock@npm:^2.6.4":
-  version: 2.6.4
-  resolution: "esmock@npm:2.6.4"
-  checksum: 10c0/749feda1d267aff12e37eb189e3382c6a2c4f28c8384d31cc3e85308ac76011f032299b77023fa05d6d0aba802c3401ac54275e9377919d00b804ef619f17d44
+  version: 2.6.5
+  resolution: "esmock@npm:2.6.5"
+  checksum: 10c0/d574db3f7ebee029ba3545450cac2f65600b538a965c4972c09d1bd92cd101c9b1510bbc40453687a4b5d63d28d1d4cea083f29d8165bb6df10b401974537a25
   languageName: node
   linkType: hard
 
