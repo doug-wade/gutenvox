@@ -690,15 +690,15 @@ __metadata:
   linkType: hard
 
 "node-fetch-cache@npm:^4.1.0":
-  version: 4.1.1
-  resolution: "node-fetch-cache@npm:4.1.1"
+  version: 4.1.2
+  resolution: "node-fetch-cache@npm:4.1.2"
   dependencies:
     "@types/node-fetch": "npm:2.6.11"
     cacache: "npm:^18.0.1"
     form-data: "npm:^4.0.0"
     locko: "npm:^1.1.0"
     node-fetch: "npm:2.7.0"
-  checksum: 10c0/e1253c4cf4577a0965d6b685be7deb8ebbd3d5bc339ca55900ff306462cfd4141726d083f7bd4cebe5f9b8c4e933b29291dc14ea566c45b40dd32e754e2e6f81
+  checksum: 10c0/562d9d2d08e2aa1cdab4cdb90f7fcc0f44f8dac6cbbaeeda188d5575d9c578bb586bf4144585c34c94763bd048ad0629d87a5b772b33a8206a4d057e6815148c
   languageName: node
   linkType: hard
 
