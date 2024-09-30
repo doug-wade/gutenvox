@@ -11,7 +11,7 @@
     "test": "node --experimental-modules=true --loader=tsm --test tst/*.test.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
+    "@types/node": "^22.7.4",
     "@types/node-fetch-cache": "^3.0.5",
     "esmock": "^2.6.4",
     "tsm": "^2.3.0"
