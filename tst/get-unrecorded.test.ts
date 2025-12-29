@@ -3,7 +3,7 @@ import { afterEach, describe, it , mock } from "node:test";
 
 import esmock from 'esmock';
 
-import gutendexPage from './fixtures/gutendex-page.json' assert { type: 'json' };
+import gutendexPage from './fixtures/gutendex-page.json' with { type: 'json' };
 
 describe("get-unrecorded", () => {
     afterEach(() => {
