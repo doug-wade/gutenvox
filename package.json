@@ -20,5 +20,5 @@
     "node-fetch-cache": "^5.0.2",
     "typescript": "^5.3.3"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.12.0"
 }
