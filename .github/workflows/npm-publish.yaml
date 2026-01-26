@@ -1,7 +1,13 @@
 name: Publish Package to npmjs
+
 on:
     release:
         types: [created]
+
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -10,7 +16,7 @@ jobs:
               uses: actions/checkout@v4
 
             - name: Setup node
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
               with:
                   node-version: '24.x'
                   registry-url: 'https://registry.npmjs.org'
@@ -23,5 +29,3 @@ jobs:
 
             - name: Publish packages
               run: npm publish
-              env:
-                NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
