@@ -3,8 +3,8 @@ import { describe, it } from "node:test";
 
 import esmock from "esmock";
 
-import librivoxResponse from './fixtures/librivox-response.json' assert { type: 'json' };
-import gutendexPage from './fixtures/gutendex-page.json' assert { type: 'json' };
+import librivoxResponse from './fixtures/librivox-response.json';
+import gutendexPage from './fixtures/gutendex-page.json';
 
 describe("librivox-has", () => {
     it("should return true if the book is in LibriVox", async () => {

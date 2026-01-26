@@ -1,6 +1,6 @@
 import fetch from 'node-fetch-cache';
 
-import type { GutendexBook } from './types.d.ts';
+import type { GutendexBook, LibrivoxSearchResult } from './types.d.ts';
 
 const extractId = (url: string) => {
     const split = url.split('/');
@@ -21,7 +21,7 @@ const librivoxHas = async (book: GutendexBook) => {
     params.append('format', 'json');
 
     const response = await fetch(url.href);
-    const data = await response.json();
+    const data: LibrivoxSearchResult = await response.json() as LibrivoxSearchResult;
 
     if (data.error) {
         return false;
