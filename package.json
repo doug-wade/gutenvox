@@ -6,9 +6,12 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "tsc --project tsconfig.json",
+    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/cli.js --banner:js=\"#!/usr/bin/env node\"",
+    "clean": "del dist",
     "coverage": "node --experimental-modules=true --experimental-test-coverage=true --test-reporter=lcov --test-reporter-destination=lcov.info --loader=tsm --test tst/*.test.ts",
-    "test": "node --experimental-modules=true --loader=tsm --test tst/*.test.ts"
+    "make-executable": "chmod +x dist/cli.js",
+    "test": "node --experimental-modules=true --loader=tsm --test tst/*.test.ts",
+    "typecheck": "tsc --project tsconfig.json"
   },
   "devDependencies": {
     "@types/node": "^25.0.3",
@@ -17,6 +20,8 @@
     "tsm": "^2.3.0"
   },
   "dependencies": {
+    "del-cli": "^7.0.0",
+    "esbuild": "^0.27.2",
     "node-fetch-cache": "^5.1.0",
     "typescript": "^5.9.3"
   },
@@ -24,5 +29,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/doug-wade/gutenvox"
-  }
+  },
+  "files": [
+    "dist/"
+  ]
 }
