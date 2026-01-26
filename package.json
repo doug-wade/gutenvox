@@ -1,7 +1,7 @@
 {
   "name": "gutenvox",
   "description": "find the top project gutenberg books that have no librivox recording",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "bin": "dist/index.js",
   "license": "MIT",
   "type": "module",
