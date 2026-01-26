@@ -12,7 +12,7 @@ describe("librivox-has", () => {
             'node-fetch-cache': () => Promise.resolve(new Response(JSON.stringify(librivoxResponse)))
         });
 
-        const actual = await librivoxHas(gutendexPage.results[0]);
+        const actual = await librivoxHas({ book: gutendexPage.results[0], verbose: false });
 
         assert.ok(actual);
     });
@@ -22,7 +22,7 @@ describe("librivox-has", () => {
             'node-fetch-cache': () => Promise.resolve(new Response('{"books":[]}', { status: 200 }))
         });
 
-        const actual = await librivoxHas(gutendexPage.results[0]);
+        const actual = await librivoxHas({ book: gutendexPage.results[0], verbose: false });
 
         assert.ok(!actual);
     });

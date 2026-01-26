@@ -9,7 +9,7 @@ const extractId = (url: string) => {
     return parseInt(last);
 };
 
-const librivoxHas = async (book: GutendexBook) => {
+const librivoxHas = async ({ book, verbose }: { book: GutendexBook, verbose: boolean }) => {
     const stringUrl = 'https://librivox.org/api/feed/audiobooks/';
     const url = new URL(stringUrl);
     const params = url.searchParams;
@@ -25,6 +25,10 @@ const librivoxHas = async (book: GutendexBook) => {
 
     if (data.error) {
         return false;
+    }
+
+    if (verbose) {
+        console.log(`Checked LibriVox for book ID ${book.id} (${book.title}), found ${data.books.length} results`);
     }
 
     for (const result of data.books) {

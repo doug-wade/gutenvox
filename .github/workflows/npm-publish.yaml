@@ -30,5 +30,8 @@ jobs:
             - name: Build monorepo
               run: yarn build
 
+            - name: Make executable
+              run: yarn make-executable
+
             - name: Publish packages
               run: npm publish
