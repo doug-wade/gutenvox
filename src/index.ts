@@ -9,6 +9,7 @@ const options = {
     limit: { type: 'string' as const, default: '10' },
     search: { type: 'string' as const },
     topic: { type: 'string' as const },
+    verbose: { type: 'boolean' as const, short: 'v', default: false }
 };
 const {
     copyright,
@@ -16,7 +17,8 @@ const {
     languages,
     limit,
     search,
-    topic
+    topic,
+    verbose
 } = parseArgs({ options }).values;
 
 (async () => {
@@ -26,7 +28,8 @@ const {
         topic: topic ? String(topic) : undefined,
         languages: String(languages), 
         sort: String(sort), 
-        copyright: String(copyright)
+        copyright: String(copyright),
+        verbose: Boolean(verbose)
     });
     printUnrecorded(unrecorded);
 })();

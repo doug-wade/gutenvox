@@ -6,10 +6,11 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/cli.js --banner:js=\"#!/usr/bin/env node\"",
+    "build": "node scripts/build.mjs",
     "clean": "del dist",
     "coverage": "node --experimental-modules=true --experimental-test-coverage=true --test-reporter=lcov --test-reporter-destination=lcov.info --loader=tsm --test tst/*.test.ts",
-    "make-executable": "chmod +x dist/cli.js",
+    "smoke-test": "node dist/index.js -v --search=dickens --limit=2",
+    "make-executable": "chmod +x dist/index.js",
     "test": "node --experimental-modules=true --loader=tsm --test tst/*.test.ts",
     "typecheck": "tsc --project tsconfig.json"
   },

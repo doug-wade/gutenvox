@@ -2,7 +2,7 @@ import fetch from 'node-fetch-cache';
 import librivoxHas from "./librivox-has.js";
 import { GutendexSearchResponse } from './types.js';
 
-const getUnrecorded = async ({ copyright, limit, search, topic, languages, sort }: { copyright: string, limit: number, search: string | undefined, topic: string | undefined, languages: string, sort: string }) => {
+const getUnrecorded = async ({ copyright, limit, search, topic, languages, sort, verbose }: { copyright: string, limit: number, search: string | undefined, topic: string | undefined, languages: string, sort: string, verbose: boolean }) => {
     const unrecorded = new Set();
     let page = 0;
 
@@ -22,6 +22,10 @@ const getUnrecorded = async ({ copyright, limit, search, topic, languages, sort 
         const response = await fetch(url.href);
         const data: GutendexSearchResponse = await response.json() as GutendexSearchResponse;
 
+        if (verbose) {
+            console.log(`Fetched page ${page} with ${data.results.length} results`);
+        }
+
         if (data.detail === "Invalid page." || data.results.length === 0) {
             console.log("No more books to check");
             break;
@@ -32,7 +36,7 @@ const getUnrecorded = async ({ copyright, limit, search, topic, languages, sort 
                 break;
             }
 
-            if (!(await librivoxHas(book))) {
+            if (!(await librivoxHas({ book, verbose }))) {
                 unrecorded.add(book);
             }
         }
